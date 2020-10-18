@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:title="@string/app_name" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/iv_party_picture"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_user_invited_pic"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_party_picture"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/circleImageView"/>
+
+    <TextView
+        android:id="@+id/tv_party_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@id/iv_user_invited_pic"
+        app:layout_constraintTop_toTopOf="@id/iv_user_invited_pic"
+        tools:text="Именины" />
+
+    <TextView
+        android:id="@+id/tv_invited_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/tv_who_invited"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_user_invited_pic"
+        app:layout_constraintStart_toStartOf="@id/tv_party_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_party_name" />
+
+    <TextView
+        android:id="@+id/tv_user_invited_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_invited_user"
+        app:layout_constraintTop_toTopOf="@id/tv_invited_user"
+        android:fontFamily="@font/roboto"
+        android:textSize="16sp"
+        tools:text="Рамиль"/>
+
+    <TextView
+        android:id="@+id/tv_also_invited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_invited_user"
+        app:layout_constraintStart_toStartOf="@id/iv_user_invited_pic"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto"
+        android:textSize="16sp"
+        android:text="@string/tv_who_also_come"/>
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv_also_invited"
+        android:background="?android:selectableItemBackground"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/baseline_add_24"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_users_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_also_invited"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="16dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

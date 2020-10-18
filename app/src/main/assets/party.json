@@ -1,0 +1,52 @@
+{
+  "partyName": "Именины",
+  "partyPicture": "https://images.reference.com/amg-cms-reference-images/media/lunar-age_3f03f5684441459c.jpg",
+  "users":
+  [
+    {
+      "id": 0,
+      "name": "Рамиль",
+      "picture": "https://www.kleo.ru/img/articles/kak-izbavitsya-ot-depressii-3-1.png"
+    },
+    {
+      "id": 1,
+      "name": "Вася",
+      "picture": "https://www.kleo.ru/img/articles/kak-izbavitsya-ot-depressii-3-1.png"
+    },
+    {
+      "id": 2,
+      "name": "Иван",
+      "picture": "https://1businessworld.com/wp-content/uploads/2019/05/20190502194704-ent19-june-editorsnote.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Олег",
+      "picture": "https://fb.ru/media/i/8/4/9/0/i/8490.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Анна",
+      "picture": "https://games-of-thrones.ru/sites/default/files/pictures/alll/AnnaMiha/48.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Алена",
+      "picture": "https://i.pinimg.com/originals/38/65/f5/3865f5035332b98193f7cc0fe3e6ceab.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Васисуалий",
+      "picture": "https://worldmanipulator.ru/wp-content/uploads/2018/06/%D0%92%D0%B0%D1%81%D0%B8%D1%81%D1%83%D0%B0%D0%BB%D0%B8%D0%B9-%D0%9B%D0%BE%D1%85%D0%B0%D0%BD%D0%BA%D0%B8%D0%BD-min.png"
+    },
+    {
+      "id": 7,
+      "name": "Дима",
+      "picture": "https://www.kleo.ru/img/articles/kak-izbavitsya-ot-depressii-3-1.png"
+    },
+    {
+      "id": 8,
+      "name": "Диана",
+      "picture": "https://natalijournal.ru/wp-content/uploads/2018/05/%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B5%D1%81%D1%81%D0%B0-%D0%94%D0%B8%D0%B0%D0%BD%D0%B02-768x1152.jpg"
+    }
+  ]
+}
